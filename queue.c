@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct {
     int *queue;
@@ -28,7 +29,7 @@ int pop(Queue *queue) {
 
 int main() {
     Queue *queue;
-    queue->queue[5];
+    queue->queue = malloc(5);
     
     push(queue, 3);
     push(queue, 2);
